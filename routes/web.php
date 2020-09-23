@@ -26,9 +26,7 @@ Auth::routes();
 // });
 
     Route::get('/admin', 'LoginAdminController@index');
-    Route::get('/get', 'LoginAdminController@login');
-    Route::get('/admin/dashboard','AdminController@index');
-    Route::post('/admin/dashboard', 'AdminController@Masuk');
+    Route::post('/admin/dashboard', 'LoginAdminController@Login');
     Route::get('/admin/addproduct','AdminController@store');
     Route::get('/admin/pesanan','AdminController@order');
    

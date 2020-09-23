@@ -10,4 +10,9 @@ class Barang extends Model
     protected $table = "products_table";
 
     protected $fillable = ['name','harga','is_ready','description','jenis','gambar','menu_id'];
+
+    public function menu()
+    {
+        return $this->belongsTo('App\Models\Menu');
+    }
 }

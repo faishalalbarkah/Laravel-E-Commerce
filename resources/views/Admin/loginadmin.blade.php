@@ -7,15 +7,24 @@
     </head>
 
     <body class="body">
-        <form class="form-login-admin" method="post" action="/Masuk">
+        <form class="form-login-admin" method="POST" action="{{ url ('/admin/dashboard')}}">
+            @csrf
+            {{ method_field('POST') }}
             <h1>Login Admin</h1>
             <div class="form-group">
                 <label for="exampleInputEmail1">Username</label>
-                <input type="text" class="form-control inputlogin" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="text" name="name"  class="form-control inputlogin" id="exampleInputEmail1" aria-describedby="emailHelp">
+                
+                @if ($errors->has('name'))
+                    <span class="text-danger">{{ $errors->first('name') }}</span>
+                @endif
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control inputlogin" id="exampleInputPassword1">
+                <input type="password" name="password"  password="password" class="form-control inputlogin" id="exampleInputPassword1">
+                @if ($errors->has('password'))
+                    <span class="text-danger">{{ $errors->first('password') }}</span>
+                @endif
             </div>
             <button type="submit" class="btn">Submit</button>
         </form>
