@@ -1,0 +1,78 @@
+.wrapping-form {
+    background-color: #13232f;
+    padding: 20px;
+    height: 365px;
+}
+
+.wrapping-form-register {
+    background-color: #13232f;
+    padding: 20px;
+    height: 420px;
+}
+
+.wrapping-form > h3{
+    color: white!important;
+    text-align: center;
+}
+
+.wrapping-form-register > h3{
+    color: white!important;
+    text-align: center;
+}
+
+.form-group > label {
+    color: white;
+    font-weight: 400;
+}
+
+.form-group > input {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    /* background: none; */
+    background-image: none;
+    background-color: #13232f;
+    border: 1px solid #30cab3;
+    color: #ffffff;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.form-control:focus {
+    background-color: #13232f;
+}
+
+.form-group > input:hover {
+    background-color: #13232f;
+}
+
+.wrapping-form > button:hover {
+    background-color:#179b77;
+}
+
+.button-block {
+    display: block;
+    width: 100%;
+    color: #179b77;
+    height: 50px;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: #1ab188;
+    color: #ffffff!important;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+}
